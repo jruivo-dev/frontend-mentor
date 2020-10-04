@@ -31,15 +31,13 @@ body {
 }
 
 .wrapper {
-  padding: 6rem 0rem;
   max-width: var(--desktop-width);
   display: grid;
   justify-content: center;
   /* border: 1px solid red; */
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 10rem 15rem;
   justify-content: space-around;
-  /* padding:5rem; */
 }
 
 .header__wrapper {
@@ -47,38 +45,38 @@ body {
   gap: 1rem;
 }
 .header__wrapper .header__header {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   color: var(--dark-magenta);
   line-height: 1;
 }
 
 .header__wrapper .header__text {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   color: var(--dark-grayish-magenta);
   font-weight: 500;
 }
 
 .ratings__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  gap:2rem;
+  justify-self: flex-end;
 }
 
 .ratings__rating {
   display: flex;
   background: var(--light-grayish-magenta);
-  padding: 2rem 5rem 2rem 3rem;
+  padding: 1.5rem 5rem 1.5rem 3rem;
   border-radius: 1rem;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
-.ratings__rating:nth-child(2) {
-  margin-left: 5rem;
+.ratings__rating:first-child {
+  transform: translateX(-8rem);
 }
-.ratings__rating:nth-child(3) {
-  margin-left: 10rem;
+.ratings__rating:nth-child(2) {
+  transform: translateX(-4rem);
 }
 
 .ratings__rating img {
@@ -116,11 +114,11 @@ body {
   gap: 3rem;
 }
 
-.testemonials__testemonial:nth-child(2) {
-  margin-top: 1rem;
+.testemonials__testemonial:first-child {
+  transform: translateY(-4rem);
 }
-.testemonials__testemonial:nth-child(3) {
-  margin-top: 2rem;
+.testemonials__testemonial:nth-child(2) {
+  transform: translateY(-2rem);
 }
 
 .testemonials__testemonial-header {
@@ -176,21 +174,16 @@ body {
   }
 
   .ratings__wrapper > * {
-    margin-left: 0 !important;
+    transform:translateY(0) !important;
     width: 100%;
   }
   .ratings__wrapper {
-    align-items: center;
-    /* flex-direction: row; */
-    /* justify-content:auto */
+    justify-self: auto;
   }
 
-  .ratings__rating .ratings__rating-text{
+  .ratings__rating .ratings__rating-text {
     font-size: 1.3rem;
-
   }
-
-
 
   .ratings__rating {
     flex-direction: column;
