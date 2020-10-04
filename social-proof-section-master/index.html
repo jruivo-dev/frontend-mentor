@@ -1,81 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- displays site properly based on user's device -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Spartan&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
 
-    <title>Frontend Mentor | Social proof section</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="header__wrapper">
-        <span class="header__header">
-          10,000+ of our users love our products.
-        </span>
-        <span class="header__text">
-          We only provide great products combined with excellent customer
-          service. See what our satisfied customers are saying about our
-          services.</span
-        >
+  <title>Frontend Mentor | Social proof section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header__wrapper">
+      <span class="header__header">
+        10,000+ of our users love our products.
+      </span>
+      <span class="header__text">
+        We only provide great products combined with excellent customer
+        service. See what our satisfied customers are saying about our
+        services.</span>
+    </div>
+
+    <div class="ratings__wrapper">
+      <div class="ratings__rating">
+        <div class="ratings__rating-stars">
+          <img src="images/icon-star.svg" alt="">
+          <img src="images/icon-star.svg" alt="">
+          <img src="images/icon-star.svg" alt="">
+          <img src="images/icon-star.svg" alt="">
+          <img src="images/icon-star.svg" alt="">
+        </div>
+        <div class="ratings__rating-text">
+          Rated 5 Stars in Reviews</div>
       </div>
 
-      <div class="ratings__wrapper">
-        <div class="ratings__rating">
-          <div class="ratings__rating-stars"></div>
-          <div class="ratings__rating-text">Rated 5 Stars in Reviews</div>
+      <div class="ratings__rating">
+        <div class="ratings__rating-stars">
+          <img src="images/icon-star.svg" alt="">
+          <img src="images/icon-star.svg" alt="">
+          <img src="images/icon-star.svg" alt="">
+          <img src="images/icon-star.svg" alt="">
+          <img src="images/icon-star.svg" alt="">
         </div>
-
-        <div class="ratings__rating">
-          <div class="ratings__rating-stars"></div>
-          <div class="ratings__rating-text">Rated 5 Stars in Report Guru</div>
-        </div>
-
-        <div class="ratings__rating">
-          <div class="ratings__rating-stars"></div>
-          <div class="ratings__rating-text">Rated 5 Stars in BestTech</div>
-        </div>
+        <div class="ratings__rating-text">Rated 5 Stars in Report Guru</div>
       </div>
 
-      <div class="testemonials__wrapper">
-        <div class="testemonials__testemonial">
-          <div class="testemonials__testemonial-header">
-            <img class="testemonials__testemonial-img" src="" alt="" />
+      <div class="ratings__rating">
+        <div class="ratings__rating-stars">
+          <img src="images/icon-star.svg" alt="">
+          <img src="images/icon-star.svg" alt="">
+          <img src="images/icon-star.svg" alt="">
+          <img src="images/icon-star.svg" alt="">
+          <img src="images/icon-star.svg" alt="">
+        </div>
+        <div class="ratings__rating-text">Rated 5 Stars in BestTech</div>
+      </div>
+    </div>
+
+    <div class="testemonials__wrapper">
+      <div class="testemonials__testemonial">
+        <div class="testemonials__testemonial-header">
+          <img class="testemonials__testemonial-img" src="images/image-colton.jpg" alt="" />
+          <div class="testemonial__author-wrapper">
+
             <span class="testemonials__testemonial-author">Colton Smith </span>
             <span class="testemonials__testemonial-buyer">Verified Buyer</span>
           </div>
-          <span class="testemonials__testemonial-text">
-            "We needed the same printed design as the one we had ordered a week
-            prior. Not only did they find the original order, but we also
-            received it in time. Excellent!"
-          </span>
         </div>
+        <span class="testemonials__testemonial-text">
+          "We needed the same printed design as the one we had ordered a week
+          prior. Not only did they find the original order, but we also
+          received it in time. Excellent!"
+        </span>
+      </div>
 
-        <div class="testemonials__testemonial">
-          <div class="testemonials__testemonial-header">
-            <img class="testemonials__testemonial-img" src="" alt="" />
+      <div class="testemonials__testemonial">
+        <div class="testemonials__testemonial-header">
+          <img class="testemonials__testemonial-img" src="images/image-irene.jpg" alt="" />
+          <div class="testemonial__author-wrapper">
+
             <span class="testemonials__testemonial-author">
               Irene Roberts
             </span>
@@ -83,19 +101,22 @@
               Verified Buyer
             </span>
           </div>
-          <span class="testemonials__testemonial-text">
-            "Customer service is always excellent and very quick turn around.
-            Completely delighted with the simplicity of the purchase and the
-            speed of delivery."
-          </span>
         </div>
+        <span class="testemonials__testemonial-text">
+          "Customer service is always excellent and very quick turn around.
+          Completely delighted with the simplicity of the purchase and the
+          speed of delivery."
+        </span>
       </div>
 
       <div class="testemonials__testemonial">
         <div class="testemonials__testemonial-header">
-          <img class="testemonials__testemonial-img" src="" alt="" />
-          <span class="testemonials__testemonial-author"> Anne Wallace </span>
-          <span class="testemonials__testemonial-buyer"> Verified Buyer </span>
+          <img class="testemonials__testemonial-img" src="images/image-anne.jpg" alt="" />
+          <div class="testemonial__author-wrapper">
+
+            <span class="testemonials__testemonial-author"> Anne Wallace </span>
+            <span class="testemonials__testemonial-buyer"> Verified Buyer </span>
+          </div>
         </div>
         <span class="testemonials__testemonial-text">
           "Put an order with this company and can only praise them for the very
@@ -103,13 +124,14 @@
           everyone!"
         </span>
       </div>
-
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/jruivo-dev">jruivo-dev</a>.
-      </div>
     </div>
-  </body>
+
+  </div>
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="https://github.com/jruivo-dev">jruivo-dev</a>.
+  </div>
+</body>
+
 </html>
