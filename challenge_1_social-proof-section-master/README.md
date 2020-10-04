@@ -6,4 +6,4 @@
 
 Thanks for checking out this front-end coding challenge.
 
-[**Live version here**](https://social-proof-section-umber-seven.vercel.app/)
+[**Live version here**](https://frontend-mentor-liart.vercel.app/)
