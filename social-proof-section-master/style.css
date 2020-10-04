@@ -158,6 +158,7 @@ body {
   .wrapper {
     grid-template-columns: auto;
     padding: 10rem 3rem;
+    gap:3rem;
   }
 
   .header__wrapper {
@@ -179,6 +180,7 @@ body {
   }
   .ratings__wrapper {
     justify-self: auto;
+    gap:0;
   }
 
   .ratings__rating .ratings__rating-text {
@@ -203,6 +205,10 @@ body {
   }
   .testemonials__wrapper {
     grid-template-columns: auto;
+  }
+
+  .testemonials__testemonial {
+    transform:translateY(0) !important;
   }
 
   .testemonials__testemonial-author,
