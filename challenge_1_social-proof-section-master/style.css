@@ -36,8 +36,9 @@ body {
   justify-content: center;
   /* border: 1px solid red; */
   grid-template-columns: 1fr 1fr;
-  gap: 10rem 15rem;
+  gap: 8rem 15rem;
   justify-content: space-around;
+  padding:3rem;
 }
 
 .header__wrapper {
@@ -96,6 +97,7 @@ body {
   display: grid;
   grid-auto-flow: column;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .testemonials__wrapper {
@@ -152,7 +154,6 @@ body {
 .testemonials__testemonial-text {
   color: var(--white);
   line-height: 1.5;
-  font-size: 1.1rem;
 }
 @media screen and (max-width: 992px) {
   .wrapper {
