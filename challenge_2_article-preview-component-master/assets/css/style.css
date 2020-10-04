@@ -8,6 +8,12 @@
   --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 body {
   font-size: 13px;
   font-family: "Manrope", sans-serif;
