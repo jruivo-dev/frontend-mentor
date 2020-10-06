@@ -1,0 +1,43 @@
+:root {
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+* {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: url("./images/bg-desktop.png") no-repeat center center fixed;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+.menu-wrapper {
+  margin: 3rem;
+  max-width: var(--desktop-width);
+  display: grid;
+  gap: 2rem;
+  grid-auto-flow: column;
+}
+
+.left-menu,
+.right-menu {
+  background: var(--dark-blue);
+}
+
+.left-menu {
+  padding: 2rem 8rem 2rem 2rem;
+  border-radius: 0.5rem 6rem 0.5rem 0.5rem;
+}
