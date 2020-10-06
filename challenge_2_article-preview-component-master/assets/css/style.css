@@ -29,7 +29,7 @@ body {
 
 .card {
   min-width: var(--mobile-width);
-  margin: 0 5rem;
+  margin: 0 10rem;
   border-radius: 1rem;
   background: white;
   max-width: 50rem;
@@ -91,7 +91,6 @@ body {
 .share-wrapper {
   display: grid;
   justify-content: flex-end;
-  position: relative;
 }
 
 .share-btn {
@@ -102,8 +101,13 @@ body {
   cursor: pointer;
   width: 3rem;
   height: 3rem;
+  position: relative;
 }
 .share-btn:active {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.share-btn.active {
   background-color: var(--very-dark-grayish-blue);
 }
 
@@ -116,16 +120,22 @@ body {
   border-radius: 0.8rem;
   position: absolute;
   transform: translateY(-5rem);
+  transition: all 0.3s;
 }
 
 .popup.hide {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup.hide::after {
+  user-select: none;
 }
 
 .popup::after {
   content: "";
   top: 100%;
-  left: 50%;
+  left: calc(50% - 1rem);
   position: absolute;
   width: 0;
   height: 0;
@@ -134,7 +144,8 @@ body {
   border-top: 1rem solid var(--very-dark-grayish-blue);
 }
 
-popup >* , .share-btn{
+popup > *,
+.share-btn {
   user-select: none;
 }
 
@@ -143,21 +154,15 @@ popup >* , .share-btn{
   letter-spacing: 0.5rem;
 }
 
-.share-btn.active {
-  background-color: var(--very-dark-grayish-blue);
-}
-
-
-@media only screen  and (max-width:730px){
-
-  .card{
+@media only screen and (max-width: 900px) {
+  .card {
+    margin:0rem 6rem;
     grid-template-columns: auto;
     /* grid-auto-flow: row; */
     grid-template-rows: 0.7fr 1fr;
-
   }
 
-  .img{
+  .img {
     /* height: 100%; */
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 0rem;
