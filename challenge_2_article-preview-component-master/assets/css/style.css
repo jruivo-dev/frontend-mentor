@@ -49,15 +49,25 @@ body {
 
 .main {
   display: grid;
-  padding: 2.5rem 3rem;
   align-content: space-between;
   gap: 1rem;
+  padding-top: 2.5rem;
+  padding-bottom: 0;
 }
+
+.title,
+.description,
+.footer {
+  padding: 0 3rem;
+}
+
 .title {
   font-size: 1.5rem;
   font-weight: 700;
+  padding: 0 3rem;
 }
 .description {
+  padding: 0 3rem;
   font-size: 1rem;
   color: var(--desaturated-dark-blue);
 }
@@ -68,6 +78,10 @@ body {
   align-items: center;
   grid-template-columns: auto auto 1fr;
   gap: 1rem;
+  width: 100%;
+  position: relative;
+  padding-bottom: 1rem;
+
 }
 
 .author-img {
@@ -111,6 +125,11 @@ body {
   background-color: var(--very-dark-grayish-blue);
 }
 
+.share {
+  color: var(--grayish-blue);
+  letter-spacing: 0.5rem;
+}
+
 .popup {
   background: var(--very-dark-grayish-blue);
   padding: 1rem 2.8rem;
@@ -121,6 +140,8 @@ body {
   position: absolute;
   transform: translateY(-5rem);
   transition: all 0.3s;
+  padding-bottom: 1rem;
+
 }
 
 .popup.hide {
@@ -149,14 +170,9 @@ popup > *,
   user-select: none;
 }
 
-.share {
-  color: var(--grayish-blue);
-  letter-spacing: 0.5rem;
-}
-
 @media only screen and (max-width: 900px) {
   .card {
-    margin:0rem 6rem;
+    margin: 0rem 6rem;
     grid-template-columns: auto;
     /* grid-auto-flow: row; */
     grid-template-rows: 0.7fr 1fr;
@@ -166,5 +182,27 @@ popup > *,
     /* height: 100%; */
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 0rem;
+  }
+
+  .popup {
+    width: 100%;
+    background: var(--very-dark-grayish-blue);
+    /* padding: 1rem 2.8rem; */
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    /* border-radius: 0.8rem; */
+    position: absolute;
+    transform: none;
+    transition: all 0.3s;
+  }
+
+  .popup::after {
+    display: none;
+  }
+
+  popup > *,
+  .share-btn {
+    user-select: none;
   }
 }
