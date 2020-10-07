@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Fylo data storage component</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-
-  </style>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <div class="wrapper">
-
-    <div class="menu-wrapper">
-      <div class="left-menu">
-        <img class='logo' src="./images/logo.svg" alt="">
-        <div class="icon-wrapper">
-          <img src="images/icon-document.svg" alt="">
+  <body>
+    <div class="wrapper">
+      <div class="menu-wrapper">
+        <div class="left-menu">
+          <img class="logo" src="./images/logo.svg" alt="" />
+          <div class="buttons-wrapper">
+            <div class="icon-wrapper">
+              <img src="images/icon-document.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="images/icon-folder.svg" alt="" />
+            </div>
+            <div class="icon-wrapper">
+              <img src="images/icon-upload.svg" alt="" />
+            </div>
+          </div>
         </div>
-        <div class="icon-wrapper">
-          <img src="images/icon-folder.svg" alt="">
+
+        <div class="right-menu">
+          <p class="storage-text">
+            You’ve used <strong>815 GB</strong> of your storage
+          </p>
+
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar">
+              <div class="bar">
+                <div class="bar-circle"></div>
+              </div>
+            </div>
+            <div class="limits">
+              <span class="min">0 GB</span>
+              <span class="max">1000 GB</span>
+            </div>
+          </div>
+          <div class="storage-left-popup">
+            <span class="storage-number">185</span> GB Left
+          </div>
         </div>
-        <div class="icon-wrapper">
-          <img src="images/icon-upload.svg" alt="">
-        </div>
-      </div>
-
-      <div class="right-menu">
-
-        You’ve used 815 GB of your storage
-
-        185 GB Left
-
-        0 GB
-        1000 GB
       </div>
     </div>
-
-  </div>
-
-</body>
-
+  </body>
 </html>
