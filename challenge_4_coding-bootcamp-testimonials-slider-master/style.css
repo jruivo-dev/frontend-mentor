@@ -23,7 +23,7 @@
   background-position: bottom left;
   display: grid;
   place-items: center;
-  padding: 3.5rem;
+  padding: 0rem 4rem;
   color: var(--dark-blue);
 }
 
@@ -42,6 +42,7 @@
 }
 
 .text-side {
+  width: 85%;
   padding-top: 2rem;
   display: grid;
   align-content: center;
@@ -49,7 +50,8 @@
   background-repeat: no-repeat;
   background-position: 25% 32%;
   gap: 1rem;
-  transform: translateX(5.5rem);
+  /* transform: translateX(30%); */
+  z-index: 1;
 }
 
 .comment {
@@ -78,10 +80,67 @@
   background-image: url("images/pattern-bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  padding: 2.5rem;
+  z-index: 0;
+  transform: translateX(-28%);
 }
 
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .author-img {
-  padding: 2.5rem;
-  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+  object-fit: cover;
   /* TODO: padding is messing up the radius, needs anotherw wrapper. */
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.slider-btns {
+  position: absolute;
+  display: grid;
+  bottom: 0;
+  grid-auto-flow: column;
+  left: 15%;
+
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.icon-prev,
+.icon-next {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  padding: 0.4rem 0.6rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.icon-prev {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.icon-next {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.icon-prev:hover,
+.icon-next:hover {
+  background-color: var(--grayish-blue);
+  transform: scale(1.02) translateY(-4px);
+}
+.icon-prev:active,
+.icon-next:active {
+  transform: scale(0.98) translateY(2px);
+  fill:red;
 }
